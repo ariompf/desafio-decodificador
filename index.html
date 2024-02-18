@@ -8,8 +8,26 @@
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <header class="cabecalho"></header>
-    <main class="apresentacao"></main>
-    <footer class="rodape"></footer>
+    <header class="cabecalho">
+        <a class="cabecalho__link" href="index.html">
+            <img class="cabecalho__link__logo" src="assets/logo_pimenta_raiz_reduzida.png" alt="Logo Pimenta Raiz, marca pessoal de Ariom Pimenta, uma aranha estilizada em arte poligonal vermelho-terroso num fundo circular amarelo.">
+        </a>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <textarea name="texto" id="texto" cols="30" rows="10"minlength="1" placeholder="Digite seu texto"></textarea>
+            <p>Nenhuma mensagem encontrada</p>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+        <div class="apresentacao__botoes">
+            <label for="button">(!) Apenas lestras minúsculas e sem acento.</label>
+            <button class="apresentacao__botoes_criptografar"></button>
+            <button class="apresentacao__botoes__descriptografar"></button>
+            <button class="apresentacao__botoes__copiar"></button>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Ariom Pimenta em Fevereiro de 2024. Última atualização em Fevereiro de 2024.</p>
+    </footer>
 </body>
 </html>
