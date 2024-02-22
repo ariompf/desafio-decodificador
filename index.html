@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador & Codificador</title>
+    <title>Decodificador & Codificador de Texto</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
@@ -15,19 +15,26 @@
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <textarea name="texto" id="texto" cols="30" rows="10"minlength="1" placeholder="Digite seu texto"></textarea>
-            <p>Nenhuma mensagem encontrada</p>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <textarea class="texto-input" name="texto" id="texto" cols="30" rows="10"minlength="1" placeholder="Digite seu texto"></textarea>
+            <div class="formulario">
+                <img class="imagem-alerta" src="" alt="exclamação de alerta">
+                <label for="texto-input">Apenas lestras minúsculas e sem acento.</label>
+            </div>
+            <div class="apresentacao__botoes">
+                <button class="apresentacao__botoes_criptografar">Criptografar</button>
+                <button class="apresentacao__botoes__descriptografar">Descriptografar</button>
+            </div>
         </section>
-        <div class="apresentacao__botoes">
-            <label for="button">(!) Apenas lestras minúsculas e sem acento.</label>
-            <button class="apresentacao__botoes_criptografar"></button>
-            <button class="apresentacao__botoes__descriptografar"></button>
-            <button class="apresentacao__botoes__copiar"></button>
-        </div>
+        <section>
+            <div id="div-aparece">
+                <textarea class="texto-output" name="texto" id="texto" cols="30" rows="10"minlength="1" placeholder="Nenhuma mensagem encontrada. Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+                <button class="apresentacao__botoes__copiar">Copiar</button>
+            </div>
+        </section>
     </main>
     <footer class="rodape">
         <p>Desenvolvido por Ariom Pimenta em Fevereiro de 2024. Última atualização em Fevereiro de 2024.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
