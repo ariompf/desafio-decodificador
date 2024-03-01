@@ -1,5 +1,5 @@
-//const texto_input = document.querySelector("#texto-input"); 
-//const texto_output = document.querySelector("#texto-output");
+//const texto_input = document.querySelector(".texto-input"); 
+//const texto_output = document.querySelector(".texto-output");
 
 let matriz_code = [
     ["e", "enter"],
