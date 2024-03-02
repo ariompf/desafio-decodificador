@@ -1,21 +1,43 @@
-//const texto_input = document.querySelector(".texto-input"); 
-//const texto_output = document.querySelector(".texto-output");
+const textoInput = document.querySelector(".texto-input"); 
+const textoOutput = document.querySelector(".texto-output");
 
-let matriz_code = [
-    ["e", "enter"],
-    ["i", "imes"],
-    ["a", "ai"],
-    ["o", "ober"],
-    ["u", "ufat"]
-];
+function botao_criptografar(){
+    const textoCriptografado = criptografar(textoInput.value);
+    textoOutput.value = textoCriptografado;
+    textoInput.value = "";
+}
 
-function botao_criptografar(){}
+function criptografar(stringCriptografada) {
+    let matriz_code = [["e", "enter"],["i", "imes"],["a", "ai"],["o", "ober"],["u", "ufat"]];
+    stringCriptografada = stringCriptografada.toLowerCase()
+    for(let i = 0; i < matriz_code.length; i++){
+        if(stringCriptografada.includes(matriz_code[i][0])){
+            stringCriptografada = stringCriptografada.replaceAll(matriz_code[i][0], matriz_code[i][1]);
+        }
+    }
+    return stringCriptografada
+}
 
-function botao_descriptografar(){}
+
+function botao_descriptografar(){
+    const textoDescriptografado = descriptografar(textoInput.value);
+    textoOutput.value = textoDescriptografado;
+    textoInput.value = "";
+}
+
+function descriptografar(stringDescriptografada){
+    let matriz_code = [["e", "enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
+    stringDescriptografada = stringDescriptografada.toLowerCase()
+    for(let i = 0; i < matriz_code.length; i++){
+        if(stringDescriptografada.includes(matriz_code[i][1])){
+            stringDescriptografada = stringDescriptografada.replaceAll(matriz_code[i][1],matriz_code[i][0]);
+        }
+    }
+    return stringDescriptografada
+}
 
 
-
-function criptografar(string) {
+/* function criptografar(string) {
     const resultado = string
         .replaceAll("e", "enter")
         .replaceAll("i", "imes")
@@ -33,12 +55,9 @@ function descriptografar(string) {
         .replaceAll("ober", "o")
         .replaceAll("ufat", "u");
     return resultado;
-}
+} 
 
-
-
-
-/* Bloco de Teste para Criptografar e Descriptografar 
+ Bloco de Teste para Criptografar e Descriptografar 
 let test = "texto de teste a e i o u";
 let testout = "tenterxtober denter tenterstenter ai enter imes ober ufat"
 console.log(test);
