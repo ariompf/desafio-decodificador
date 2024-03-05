@@ -1,6 +1,7 @@
 const textoInput = document.querySelector(".texto-input"); 
 const textoOutput = document.querySelector(".texto-output");
 
+
 function botao_criptografar(){
     const textoCriptografado = criptografar(textoInput.value);
     textoOutput.value = textoCriptografado;
@@ -17,7 +18,6 @@ function criptografar(stringCriptografada) {
     }
     return stringCriptografada
 }
-
 
 function botao_descriptografar(){
     const textoDescriptografado = descriptografar(textoInput.value);
@@ -36,6 +36,13 @@ function descriptografar(stringDescriptografada){
     return stringDescriptografada
 }
 
+function botao_copiar(){
+    const textoCopiar = document.getElementById("texto-output");
+    textoCopiar.select();
+    textoCopiar.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(textoCopiar.value);
+    alert("Copiado: " + textoCopiar.value);
+}
 
 /* function criptografar(string) {
     const resultado = string
