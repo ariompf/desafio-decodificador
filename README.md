@@ -1,17 +1,17 @@
 <h1>Desafio Decodificador de Texto</h1>
 
 <h2>�� Sobre</h2>
-<p>Desafio de criar um decodificador de texto em JavaScript, HTML e CSS como parte final da primeira etapa da formação de iniciação à programação, turma 6 da Oracle Next Education (ONE) em parceria com Alura.</p>
+<p>Desafio de criar um decodificador de texto em JavaScript, HTML e CSS como parte final da primeira etapa da formação de iniciação à programação, turma 6 da Oracle Next Education (ONE) em parceria com Alura. #challengeonedecodificador6</p>
 
 <h3>Conteúdo</h3>
 
  - Presentes
-
- - Futuros
      1. Iniciar projeto
      2. Adcionar arquivos
      3. Começar pelo JavaScript e HTML
      4. Editar CSS junto ao Figma
+ - Futuros
+
 
 ## �� Tecnologias
 <div>
