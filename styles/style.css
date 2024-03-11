@@ -1,7 +1,6 @@
-/* Importar fonte */
 *{
     background-color: #e5e5e5;
-    font-family: ;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 1.3rem;
     line-height: 150%;
@@ -30,10 +29,13 @@ main {
     .texto-input:focus {
         outline: none;
     }
+    .texto-output:focus {
+        background-image: url(/assets/High\ quality\ products\ 1\ 1.svg);
+
+    }
 
 .texto-output {
     background: white;
-    background-image: url(/assets/High\ quality\ products\ 1\ 1.svg);
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
